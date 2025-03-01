@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a2a6c, #b23232, #c28b14);
+    background-size: 200% 200%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 🔹 Heading */
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+}
+
+/* 🔹 Counter Box (Glassmorphism Effect) */
+.container {
+    width: 350px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Floating Effect */
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 40px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Counter Display */
+.count h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* 🔹 Buttons Section */
+.blockk {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* 🔹 Buttons (Neon Style) */
+.blockk h3 {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Increase Button (Emerald Green) */
+.blockk h3:first-child {
+    background: linear-gradient(135deg, #00C896, #009975);
+}
+
+.blockk h3:first-child:hover {
+    background: linear-gradient(135deg, #009975, #008060);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 200, 150, 0.7);
+}
+
+/* 🔹 Decrease Button (Royal Blue) */
+.blockk h3:last-child {
+    background: linear-gradient(135deg, #007BFF, #0056B3);
+}
+
+.blockk h3:last-child:hover {
+    background: linear-gradient(135deg, #0056B3, #003F80);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.7);
+}
+
+/* 🔹 Reset Button (Fiery Orange) */
+.reset h3 {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #FF6A00, #E63900);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 50, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.reset h3:hover {
+    background: linear-gradient(135deg, #E63900, #CC2900);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(230, 57, 0, 0.7);
+}
+
+/* 🔹 Icon Styling */
+.reset h3 svg {
+    margin-right: 5px;
+}
